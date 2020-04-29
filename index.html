@@ -8,6 +8,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">	
     <title>Hello, world!</title>
+    <script src="vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
   <body>
     <style type="text/css">
@@ -19,221 +21,255 @@
       color: black;
       overflow: hidden;
     }
+
+    .judul{
+        height: 500px;
+        width: 1200px;
+        margin: 30px auto;
+        padding-top: 45px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .menu{
+        width: 1250px;
+        margin-left: 40px;
+
+    }
+
+    .galery{
+        background-color: #fceac7;
+        width: 1000px;
+        margin: 20px auto;
+        padding-top: 30px;
+        padding-right: 50px;
+        padding-left: 50px;
+      }
+
+    .main{
+        background-color: #fceac7;
+      }
+
+      .MainMenu{
+        background-color: #aceda4;
+        width: 1250px;
+        margin: 30px auto;
+        padding-top: 45px;
+        padding-right: 20px;
+        padding-left: 20px;
+        
+      }
+      .ProdukAtas{
+        background-color: #aceda4;
+        width: 1250px;
+        margin: 30px auto;
+        padding-top: 45px;
+        padding-right: 20px;
+        padding-left: 20px;
+
+      }
     </style>
 
-
-    <nav class="navbar">
-      <div class="container">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">GFLWRS.</a>
-        </div>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">HOME</a></li>
-          <li><a href="#">ABOUT</a></li>
-          <li><a href="#">PRODUCT</a></li>
-          <li><a href="#"><span class="glyphicon glyphicon-user"></span></a></li>
-          <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
-        </ul>
-      </div>
-    </nav>
-    <div class="container">
-      <div class="jumbotron">
-        <h1 class="text-center">New Flowers</h1> 
-        <h1 class="text-center">Collection</h1>
-        <p class="text-center">
-          <button class="btn btn-lg btn-default">Shop Now</button>
-        </p>
-        <br/>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-6 col-md-4">
-          <a href="#" class="thumbnail">
-            <img src="flower.jpg">
-            <div class="caption">
-              <h3 class="text-center">Product Name</h3>
-              <p class="text-center">Rp 999.000,-</p>
-            </div>
-          </a>
-        </div>
-        <div class="col-sm-6 col-md-4">
-          <a href="#" class="thumbnail">
-            <img src="flower.jpg">
-            <div class="caption">
-              <h3 class="text-center">Product Name</h3>
-              <p class="text-center">Rp 999.000,-</p>
-            </div>
-          </a>
-        </div>
-        <div class="col-sm-6 col-md-4">
-          <a href="#" class="thumbnail">
-            <img src="flower.jpg">
-            <div class="caption">
-              <h3 class="text-center">Product Name</h3>
-              <p class="text-center">Rp 999.000,-</p>
-            </div>
-          </a>
-        </div>
-      </div>
-      <p class="text-center">
-        <button class="btn btn-lg btn-default">Show All</button>
-      </p>
-    </div>
-
-  <br/>
-  <br/>
-  <br/>
-  
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12 col-md-6">
-          <a href="#" class="thumbnail">
-            <img src="flower.jpg">
-          </a>
-        </div>
-        <div class="col-sm-12 col-md-6">
-          <a href="#" class="thumbnail">
-            <img src="flower.jpg">
-          </a>
-        </div>
-      </div>
-    </div>
-
-  <br/>
-  <br/>
-  <br/>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-6 col-md-4">
-          <a href="#" class="thumbnail">
-            <img src="flower.jpg">
-            <div class="caption">
-              <h3 class="text-center">Product Name</h3>
-              <p class="text-center">Rp 999.000,-</p>
-            </div>
-          </a>
-        </div>
-        <div class="col-sm-6 col-md-4">
-          <a href="#" class="thumbnail">
-            <img src="flower.jpg">
-            <div class="caption">
-              <h3 class="text-center">Product Name</h3>
-              <p class="text-center">Rp 999.000,-</p>
-            </div>
-          </a>
-        </div>
-        <div class="col-sm-6 col-md-4">
-          <a href="#" class="thumbnail">
-            <img src="flower.jpg">
-            <div class="caption">
-              <h3 class="text-center">Product Name</h3>
-              <p class="text-center">Rp 999.000,-</p>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-6 col-md-4">
-          <a href="#" class="thumbnail">
-            <img src="flower.jpg">
-            <div class="caption">
-              <h3 class="text-center">Product Name</h3>
-              <p class="text-center">Rp 999.000,-</p>
-            </div>
-          </a>
-        </div>
-        <div class="col-sm-6 col-md-4">
-          <a href="#" class="thumbnail">
-            <img src="flower.jpg">
-            <div class="caption">
-              <h3 class="text-center">Product Name</h3>
-              <p class="text-center">Rp 999.000,-</p>
-            </div>
-          </a>
-        </div>
-        <div class="col-sm-6 col-md-4">
-          <a href="#" class="thumbnail">
-            <img src="flower.jpg">
-            <div class="caption">
-              <h3 class="text-center">Product Name</h3>
-              <p class="text-center">Rp 999.000,-</p>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-6 col-md-4">
-          <a href="#" class="thumbnail">
-            <img src="flower.jpg">
-            <div class="caption">
-              <h3 class="text-center">Product Name</h3>
-              <p class="text-center">Rp 999.000,-</p>
-            </div>
-          </a>
-        </div>
-        <div class="col-sm-6 col-md-4">
-          <a href="#" class="thumbnail">
-            <img src="flower.jpg">
-            <div class="caption">
-              <h3 class="text-center">Product Name</h3>
-              <p class="text-center">Rp 999.000,-</p>
-            </div>
-          </a>
-        </div>
-        <div class="col-sm-6 col-md-4">
-          <a href="#" class="thumbnail">
-            <img src="flower.jpg">
-            <div class="caption">
-              <h3 class="text-center">Product Name</h3>
-              <p class="text-center">Rp 999.000,-</p>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-
-  <br/>
-  <br/>
-  <br/>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-4">
-          <ul class="text-center">
-            <span class="glyphicon glyphicon-envelope" style="font-size:50px;"></span>
-            <br/>
-            <p>Free Shipping</p>
+    <div class="main">
+      <nav class="navbar">
+        <div class="menu">
+          <div class="navbar-header">
+            <a style="color: black; " class="navbar-brand" href="#"><strong>GFLWRS.</strong></a>
+          </div>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a style="color: black; " href="#">HOME</a></li>
+            <li><a style="color: black; " href="#">ABOUT</a></li>
+            <li><a style="color: black; " href="#">PRODUCT</a></li>
+            <li><a style="color: black; " href="#"><span class="glyphicon glyphicon-user"></span></a></li>
+            <li><a style="color: black; " href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
           </ul>
         </div>
-        <div class="col-sm-4">
-          <ul class="text-center">
-            <span class="glyphicon glyphicon-envelope" style="font-size:50px;"></span>
-            <br/>
-            <p>Free Shipping</p>
-          </ul>
-        </div>
-        <div class="col-sm-4">
-          <ul class="text-center">
-            <span class="glyphicon glyphicon-envelope" style="font-size:50px;"></span>
-            <br/>
-            <p>Free Shipping</p>
-          </ul>
-        </div>
-      </div>
-    </div>
+      </nav>
       
-          
+      <div class="judul">
+        <div class="jumbotron">
+          <h1 class="text-center">New Flowers</h1> 
+          <h1 class="text-center">Collection</h1>
+          <p class="text-center">
+            <button class="btn btn-lg btn-default">Shop Now</button>
+          </p>
+          <br/>
+        </div>
+      </div>
+
+      <div class="ProdukAtas">
+        <div class="container" id="container">
+          <div class="row">
+            <div class="col-sm-6 col-md-4" v-for="bungaku in bunga">
+              <a href="#" class="thumbnail">
+                <img v-bind:src="bungaku.image">
+                <div class="caption">
+                  <h3 class="text-center">{{bungaku.merek}}</h3>
+                  <p class="text-center">Rp {{bungaku.harga}} </p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <p class="text-center">
+            <button class="btn btn-lg btn-default">Show All</button>
+          </p>
+        </div>
+      </div>
+
+  
+    
+      <div class="galery">
+        <div class="row">
+          <h1 class="text-center">"SELAMAT DATANG"</h1>
+          <h3 class="text-center">Toko Bunga GFLWRS.</h3>
+          <br>
+          <div class="col-sm-12 col-md-6">
+            <a href="#" class="thumbnail">
+              <img src="flower.jpg">
+            </a>
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <a href="#" class="thumbnail">
+              <img src="flower.jpg">
+            </a>
+          </div>
+        </div>
+      </div>
+
+    <div class="MainMenu">
+      <div class="container" id="container2">
+        <div class="row">
+          <div class="col-sm-6 col-md-4" v-for="bungaku in bunga">
+            <a href="#" class="thumbnail">
+              <img v-bind:src="bungaku.image">
+              <div class="caption">
+                <h3 class="text-center">{{bungaku.merek}}</h3>
+                <p class="text-center">Rp {{bungaku.harga}} </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <br>
+      <br>
+      <br>
+      <br>
+
+      <div class="container" id="container3">
+        <div class="row">
+          <div class="col-sm-6 col-md-4" v-for="bungaku in bunga">
+            <a href="#" class="thumbnail">
+              <img v-bind:src="bungaku.image">
+              <div class="caption">
+                <h3 class="text-center">{{bungaku.merek}}</h3>
+                <p class="text-center">Rp {{bungaku.harga}} </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <br>
+      <br>
+      <br>
+      <br>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <ul class="text-center">
+              <span class="glyphicon glyphicon-envelope" style="font-size:50px;"></span>
+              <br/>
+              <p>Free Shipping</p>
+            </ul>
+          </div>
+          <div class="col-sm-4">
+            <ul class="text-center">
+              <span class="glyphicon glyphicon-usd" style="font-size:50px;"></span>
+              <br/>
+              <p>Secure Payment</p>
+            </ul>
+          </div>
+          <div class="col-sm-4">
+            <ul class="text-center">
+              <span class="glyphicon glyphicon-headphones" style="font-size:50px;"></span>
+              <br/>
+              <p>Customer Service</p>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+      
+    <script>
+      var vm = new Vue({   
+               el: '#container', 
+               data: {
+                   bunga:[
+                  //  {merek:'Bunga meja',harga:550000,image:'bm.jpg'}
+                  //   ,{merek:'Bunga papan',harga:1340000,image:'bp.jpg'}
+                  //  ,{merek:'Bunga wisuda',harga:250000,image:'bw.jpg'}
+                   ]
+               },
+               methods: {
+                upDate: function() {
+                    axios.get('https://my-json-server.typicode.com/ekasekas/uas/db').then(response => this.bunga=response.data['produk'])
+                },
+              },
+              mounted() {
+                this.upDate();
+                this.timer = setInterval(this.upDate, 1000)
+              }
+          })
+        var vm1 = new Vue({   
+               el: '#container2', 
+               data: {
+                   bunga:[
+                  //  {merek:'Bunga meja',harga:550000,image:'bm.jpg'}
+                  //   ,{merek:'Bunga papan',harga:1340000,image:'bp.jpg'}
+                  //  ,{merek:'Bunga wisuda',harga:250000,image:'bw.jpg'}
+                   ]
+               },
+               methods: {
+                upDate: function() {
+                    axios.get('https://my-json-server.typicode.com/ekasekas/uas/db').then(response => this.bunga=response.data['produk'])
+                },
+              },
+              mounted() {
+                this.upDate();
+                this.timer = setInterval(this.upDate, 1000)
+              }
+          })
+        var vm2 = new Vue({   
+               el: '#container3', 
+               data: {
+                   bunga:[
+                  //  {merek:'Bunga meja',harga:550000,image:'bm.jpg'}
+                  //   ,{merek:'Bunga papan',harga:1340000,image:'bp.jpg'}
+                  //  ,{merek:'Bunga wisuda',harga:250000,image:'bw.jpg'}
+                   ]
+               },
+               methods: {
+                upDate: function() {
+                    axios.get('https://my-json-server.typicode.com/ekasekas/uas/db').then(response => this.bunga=response.data['produk'])
+                },
+              },
+              mounted() {
+                this.upDate();
+                this.timer = setInterval(this.upDate, 1000)
+              }
+          })
+    </script>
      
 
       <!-- Optional JavaScript -->
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	    <script type="text/javascript" src="bootstrap/js/jquery.js"></script>
-	    <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+      <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+      
+      
   </body>
 </html>
