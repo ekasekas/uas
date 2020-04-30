@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">	
+    <title>Cart</title>
+    <script src="vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+
+      <style type="text/css">
+    .menu{
+        width: 1250px;
+        margin-left: 40px;
+
+    }
+    .main{
+        background-color: #faead2;
+      }
+      .garis{
+        border: black solid 1px;
+      }
+
+      .judul{
+          text-align: center;
+      }
+
+      body{
+          background-color: #faead2;
+      }
+
+      .total{
+          border: black 1px;
+          background-color: black;
+          border-radius: 25px;
+          height: 200px;
+          width: 300px;
+          margin-left: 200px;
+          margin-top: 50px;
+      }
+      .jdsubtotal{
+          padding-top: 20px;
+          padding-left: 20px;
+          
+      }
+      .subtotal{
+          text-align: center;
+          padding-top: 30px;
+          letter-spacing: 3px;
+      }
+      .checkout{
+            background-color: #0c6e50;
+            border: none;
+            color: #ffff19;
+            padding: 5px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            cursor: pointer;
+            border-radius: 8px;
+            margin-left: 90px
+      }
+      table{
+          border-color: #faead2;
+          margin-top: 30px;  
+          margin-left: 50px;   
+        }
+      table td{
+          border-color: #faead2;
+        }
+      table tr{
+          border-color: #faead2;
+        }
+
+
+    </style>
+  <body>
+        <div class="main">
+            <nav class="navbar">
+              <div class="menu">
+                <div class="navbar-header">
+                  <a style="color: black; " class="navbar-brand" href="#"><strong>GFLWRS.</strong></a>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a style="color: black; " href="index.html">HOME</a></li>
+                  <li><a style="color: black; " href="#">ABOUT</a></li>
+                  <li><a style="color: black; " href="#">PRODUCT</a></li>
+                  <li><a style="color: black; " href="login.html"><span class="glyphicon glyphicon-user"></span></a></li>
+                  <li><a style="color: black; " href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+                </ul>
+              </div>
+            </nav>
+            <hr class="garis" width="95%" />
+            <br>       
+        </div>
+        <p style="text-align: center;"><font face="courier new" size="5"><strong>Shopping Cart</strong></font></p>
+
+        
+        <div class="col-md-12">
+            <div class="col-md-6">
+                <table border="1" text-align="center" cellpadding="10" width="600px" height="400px">
+                    <tr align="center">
+                        <td></td>
+                        <td><strong>PRODUCT</strong></td>
+                        <td><strong>PRICE</strong></td>
+                        <td><strong>QUANTITY</strong></td>
+                    </tr>
+                    <tr align="center">
+                        <td><img src="bm.jpg" width="70px" height="70px"></td>
+                        <td>Product Name</td>
+                        <td>IDR 999,999,999</td>
+                        <td><a href="#">-</a> 1 <a href="#">+</a></td>
+                    </tr>
+                    <tr align="center">
+                        <td><img src="bm.jpg" width="70px" height="70px"></td>
+                        <td>Product Name</td>
+                        <td>IDR 999,999,999</td>
+                        <td><a href="#">-</a> 1 <a href="#">+</a></td>
+                    </tr>
+                    <tr align="center">
+                        <td><img src="bm.jpg" width="70px" height="70px"></td>
+                        <td>Product Name</td>
+                        <td>IDR 999,999,999</td>
+                        <td><a href="#">-</a> 1 <a href="#">+</a></td>
+                    </tr>
+                    <tr align="center">
+                        <td><img src="bm.jpg" width="70px" height="70px"></td>
+                        <td>Product Name</td>
+                        <td>IDR 999,999,999</td>
+                        <td><a href="#">-</a> 1 <a href="#">+</a></td>
+                    </tr>
+                </table>
+
+            </div>
+            <div class="col-md-6">
+                <div class="total">
+                    <div class="jdsubtotal"><font color="#ffff19"face="Copperplate Gothic Bold" size="2"><strong>SUBTOTAL  :</strong></font></div>
+                    <div class="subtotal"><font color="#ffff19"face="Copperplate Gothic Bold" size="3"><strong>IDR 999,999,999</strong></font></div>
+                    <br>
+                    <br>
+                    <a href="#" class="btn checkout" ><strong>CHECK OUT</strong></a>
+                </div>
+            </div>
+        </div>
+  </body>
+
+  
+</html>
